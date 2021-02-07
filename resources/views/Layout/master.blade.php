@@ -6,11 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
          <!--Carga de archivos css -->
         <link href="{{url ('/assets/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-        <link rel="icon" type="image/png" href="https://st2.depositphotos.com/3027583/7405/v/600/depositphotos_74056923-stock-illustration-car-parking-flat-icon-sign.jpg"/> 
-        <title>Parqueadero CAPSHI</title>
+        <link rel="icon" type="image/png" href="https://image.flaticon.com/icons/png/512/1655/1655740.png"/> 
+        <title>Libreria Lerner</title>
     </head>
     
-    <body>
+    <body >
         
         @include('navegation.navbar')
 
