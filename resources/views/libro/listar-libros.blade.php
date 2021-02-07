@@ -2,12 +2,13 @@
     @section('content')
 
     <br>
-    <h2><font color="black"><center>Listado de Libros </center></font></h2>
+    <h2><font color="black"><center>🗒 Listado de Libros 🗒 </center></font></h2>
 
     <br>
-    <table class="table">
-        <thead>
-            <tr>
+    <table class="table" border="3" >
+    
+        <thead >
+            <tr bgcolor="Turquoise">
                 <th scope="col">#</th>
                 <th scope="col">ISBN</th>
                 <th scope="col">Titulo</th>
@@ -21,7 +22,7 @@
 
         <tbody>
             @foreach($libro as $p )
-                <tr>
+                <tr bgcolor="LightCyan">
                     <td>{{$p->id}}</td>
                     <td>{{$p->ISBN}}</td>
                     <td>{{$p->titulo}}</td>

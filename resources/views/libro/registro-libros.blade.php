@@ -3,7 +3,7 @@
     
     <br>
     <div  align="center">
-        <font size=4 face="Comic Sans MS,arial,verdana"><h2>Registro de Libros</h2></font>
+        <font size=4 face="Comic Sans MS,arial,verdana"><h2>📝 Registro de Libros 📝</h2></font>
     </div>
     <br>
     <form action="{{route('registroLib')}}" method="POST">

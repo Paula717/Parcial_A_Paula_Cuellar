@@ -15,15 +15,15 @@ use App\Http\Controllers\EditorialController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', [PrincipalController::class,'prin'])->name('principal'); //Ruta /
+Route::get('/', [PrincipalController::class,'prin'])->name('principal'); 
 
-//Libro
-Route::get('libro/registro-libros', [LibreriaController::class,'registro_libro'])->name('formularioLib');//Ruta registrar
-Route::post('libro/registro-libros', [LibreriaController::class, 'mensaje_libro'])->name('registroLib');//Ruta mensaje
-
-Route::get('libro/listar-libros', [LibreriaController::class,'listarLibro'])->name('listaLibro'); //Ruta parqueadero/listar
-
+//Libro registro
+Route::get('libro/registro-libros', [LibreriaController::class,'registro_libro'])->name('formularioLib');
+Route::post('libro/registro-libros', [LibreriaController::class, 'mensaje_libro'])->name('registroLib');
+//Libro listar
+Route::get('libro/listar-libros', [LibreriaController::class,'listarLibro'])->name('listaLibro'); 
+//Libro actualizar
 Route::get('libro/actualizar-libro/{id}', [LibreriaController::class, 'form_actualiza_libro'])->name('form_actualiza_libro');
 Route::post('libro/actualizar-libro/{id}', [LibreriaController::class, 'actualizar_libro'])->name('actualizar_libro');
-
+//Editorial Listar
 Route::get('editorial/listar-editorial', [EditorialController::class,'listar_editorial']);
